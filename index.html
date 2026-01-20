@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer Portfolio - Showcasing personal and client projects">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-semibold text-gray-800">Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-gray-900 transition">Home</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-gray-900 transition">Projects</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-gray-900 transition">About</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</a>
+                <a href="#projects" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Projects</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    Welcome to My Portfolio
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Developer passionate about building innovative solutions and delivering quality software
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Projects</h2>
+            
+            <!-- Personal Projects -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Personal Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Job Helper -->
+                    <article class="project-card bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">Job Helper</h4>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Personal</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            A tool to streamline job search and application tracking processes
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Node.js</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Dombrapp -->
+                    <article class="project-card bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">Dombrapp</h4>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Personal</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            A creative application for music and sound manipulation
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">JavaScript</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Web Audio API</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+
+                    <!-- Threadmap -->
+                    <article class="project-card bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">Threadmap</h4>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Personal</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Visualization tool for mapping conversation threads and relationships
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">D3.js</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+
+                    <!-- linqr -->
+                    <article class="project-card bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">linqr</h4>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Personal</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            URL shortener and link management platform
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Flask</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Client Projects -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Client Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Shanyraq -->
+                    <article class="project-card bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-xl font-semibold text-gray-900">Shanyraq</h4>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Client</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Real estate platform for finding and listing properties
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Vue.js</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Django</span>
+                                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">About</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-600 mb-6">
+                    I'm a developer with a passion for creating innovative solutions that solve real-world problems. 
+                    With experience in both personal and client projects, I enjoy working with modern technologies 
+                    to build responsive, user-friendly applications.
+                </p>
+                <p class="text-lg text-gray-600">
+                    My expertise spans across full-stack development, from crafting intuitive user interfaces 
+                    to building robust backend systems. I'm always eager to learn new technologies and 
+                    take on challenging projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contact</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-lg text-gray-600 mb-8">
+                    Interested in working together or have a question? Feel free to reach out!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="mailto:contact@example.com" 
+                       class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 transition">
+                        Email Me
+                    </a>
+                    <a href="https://github.com" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition">
+                        View GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-gray-300">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript for Navigation -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 64; // Height of fixed navbar
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('border-b-2', 'border-gray-900');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('border-b-2', 'border-gray-900');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+        highlightNavigation(); // Initial call
+    </script>
+</body>
+</html>
